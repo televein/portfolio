@@ -1,0 +1,164 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+
+}
+
+h2,.white{
+    color: #fff;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+/* section 1 */
+.section-1{
+    padding-top: 40vh;
+    text-align: center;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    padding-top: 10vh;
+    width: 90%;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-1 a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 15px; 
+    border: 2px solid #ddd; 
+    margin: 10px; 
+    transition: all 0.2s ease-in-out;
+    color: #333; 
+  }
+  .tech-icon:hover {
+    transform: scale(1.1); 
+  }
+  .tech-icon i {
+    font-size: 2em;
+    color: #ddd;
+  }
+
+  .project-showcase {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust spacing as desired */
+  }
+  
+  .project-card {
+    width: 300px; /* Adjust card width as desired */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Add hover effect (optional) */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px; /* Adjust image height as desired */
+    object-fit: cover; /* Scales image to fit container */
+  }
+  
+  .project-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
